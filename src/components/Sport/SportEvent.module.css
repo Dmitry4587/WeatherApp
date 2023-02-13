@@ -1,0 +1,99 @@
+.SportEventWrapper {
+  display: grid;
+  grid-template-columns: 150px minmax(150px, auto);
+  column-gap: 15px;
+}
+.SportsEventDescr {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 7px;
+}
+.SportsEventBlock {
+  color: var(--secondary) !important;
+  display: grid;
+  grid-template-columns: 100px auto;
+  column-gap: 7px;
+}
+.SportEventText {
+  font-size: 14px !important;
+  color: var(--primary) !important;
+}
+.SportEventAvatar {
+  justify-self: center;
+}
+.SportsEventDate {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+}
+
+.SportEventTitle {
+  color: #fff !important;
+  font-weight: bold !important;
+  line-height: 35px !important;
+  font-size: 30px !important;
+}
+.SportEventSubTitle {
+  margin-top: 7px !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+}
+.SportEventMatch {
+  color: var(--primary) !important;
+  font-size: 25px !important;
+  font-weight: bold !important;
+}
+.SportEventText {
+  font-size: 18px !important;
+}
+
+.SportEventIcon {
+  color: var(--primary) !important;
+}
+
+.SportEventToggle {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.SportsListItem {
+  padding: 20px !important;
+}
+
+.SportEventDel {
+  font-size: 30px !important;
+}
+button[aria-pressed='true'] {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+@media (max-width: 900px) {
+  .SportEventWrapper {
+    grid-template-columns: auto;
+  }
+  .SportsEventDate {
+    min-height: 130px;
+  }
+  .SportsEventBlock {
+    grid-template-columns: auto;
+  }
+  div:has(.SportEventToggle) {
+    top: 25px !important;
+    right: 22px;
+    transform: none !important;
+  }
+  div:has(.SportEventDel) {
+    top: 10px !important;
+    right: 60px;
+    transform: none !important;
+  }
+  .SportsListItem {
+    padding: 10px !important;
+    justify-content: center !important;
+  }
+  .SportEventMatch {
+    width: 200px;
+  }
+}

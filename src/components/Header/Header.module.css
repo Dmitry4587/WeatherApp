@@ -1,0 +1,30 @@
+.HeaderAppBar {
+  background-color: var(--headerColor) !important;
+  z-index: 100;
+  width: 100%;
+}
+.HeaderToolBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.HeaderMenuText {
+  color: #3a3b3c !important;
+}
+
+.HeaderButton {
+  margin-right: 25px;
+}
+
+.HeaderTitle {
+  font-weight: bold !important;
+}
+
+@media (max-width: 800px) {
+  .HeaderButton {
+    margin-right: 5px;
+  }
+  .HeaderTitle {
+    font-size: 1.2rem !important;
+  }
+}

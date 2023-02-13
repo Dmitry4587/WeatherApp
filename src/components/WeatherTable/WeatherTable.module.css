@@ -1,0 +1,27 @@
+.WeatherTableBlock {
+  display: grid;
+  padding: 12px;
+  grid-template-columns: repeat(25, 90px);
+  column-gap: 15px;
+  align-items: center;
+  justify-items: center;
+}
+.WeatherTableTitle {
+  font-weight: bold;
+  font-size: 18px;
+  justify-self: start;
+}
+.WeatherTableWrapper {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  color: var(--primary);
+  font-size: 16px;
+  user-select: none;
+  overflow-x: scroll;
+}
+
+@media (max-width: 800px) {
+  .WeatherTableTitle {
+    font-size: 16px;
+  }
+}

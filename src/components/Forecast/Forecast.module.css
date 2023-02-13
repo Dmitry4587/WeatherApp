@@ -1,0 +1,18 @@
+.ForecastWrapper {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 750px);
+  justify-content: center;
+  column-gap: 50px;
+  align-items: start;
+  grid-template-rows: auto;
+  row-gap: 50px;
+}
+
+@media (max-width: 800px) {
+  .ForecastWrapper {
+    grid-template-columns: 290px;
+  }
+}

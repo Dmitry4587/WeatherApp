@@ -1,0 +1,49 @@
+select[value] {
+  color: var(--primary) !important;
+}
+.SettingForm fieldset {
+  border-color: var(--primary) !important;
+}
+
+.SettingsColor {
+  color: var(--primary) !important;
+}
+.SettingsColor svg {
+  color: var(--primary) !important;
+}
+.SettingsText {
+  font-size: 18px !important;
+  color: var(--primary) !important;
+  font-weight: bold !important;
+}
+.SettingsBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  row-gap: 20px;
+  column-gap: 20px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.SettingsBlockItem {
+  grid-column: 2 / 3;
+}
+.SettingsWrapper {
+  padding-left: 100px;
+  margin-top: 25px;
+}
+.SettingsBlockTheme {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 20px;
+  grid-template-columns: 180px 62px;
+}
+
+@media (max-width: 800px) {
+  .SettingsWrapper {
+    padding-left: 20px;
+  }
+  .SettingsBlock {
+    column-gap: 10px;
+    grid-template-columns: repeat(3, 100px);
+  }
+}

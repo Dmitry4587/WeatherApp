@@ -1,0 +1,59 @@
+.SearchDialogContent {
+  width: 510px;
+  height: 500px;
+  background-color: var(--background-card) !important;
+}
+
+.SearchDialogBtn {
+  position: absolute !important;
+  right: 10px !important;
+  top: 10px !important;
+  color: var(--primary) !important;
+}
+.SearchDialogIcon {
+  font-size: 30px;
+  color: var(--primary) !important;
+}
+.SearchDialogInit {
+  color: var(--secondary) !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px !important;
+  font-weight: bold !important;
+}
+.SearchDialogMessage {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.SearchDialogMessageContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.SearchDialogCity {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  color: var(--primary) !important;
+}
+.SearchDialogCountry {
+  color: var(--secondary) !important;
+}
+.SearchDialogTextMessage {
+  text-align: center !important;
+  color: var(--secondary) !important;
+  margin-top: 10px !important;
+}
+
+@media (max-width: 800px) {
+  .SearchDialogContent {
+    width: auto;
+  }
+  .SearchDialogInit {
+    font-size: 22px !important;
+  }
+}

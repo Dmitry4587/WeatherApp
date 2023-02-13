@@ -1,0 +1,209 @@
+.ForecastBlock {
+  min-height: 140px;
+  padding: 10px;
+  background-color: transparent !important;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ForecastLine {
+  background: linear-gradient(
+    90deg,
+    rgba(17, 190, 0, 1) 0%,
+    rgba(245, 255, 0, 1) 21%,
+    rgba(255, 124, 0, 1) 40%,
+    rgba(254, 16, 16, 1) 69%,
+    rgba(0, 52, 255, 1) 86%
+  );
+  height: 10px;
+  width: 90%;
+  margin-top: 20px;
+  border-radius: 25px;
+  position: relative;
+}
+
+.ForecastIndex {
+  font-size: 30px;
+  color: var(--primary);
+}
+.ForecastIndexText {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.ForecastLineDot {
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ffff;
+}
+
+.ForecastBlocklabel {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  align-items: center;
+  color: var(--primary);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.ForecastTitle {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-left: 5px;
+  word-wrap: break-word;
+}
+
+.WeatherForecastWrapper {
+  display: grid;
+  justify-content: center;
+  margin-top: 25px;
+  grid-template-columns: repeat(3, 220px);
+  grid-template-rows: 220px;
+  gap: 20px;
+}
+
+.ForecastInfo {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary);
+}
+
+.WeatherForecast {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  column-gap: 100px;
+  align-items: start;
+  grid-template-columns: 750px;
+  grid-template-rows: auto;
+  row-gap: 50px;
+}
+
+.ForecastBlockBig {
+  grid-column: 1 / 3;
+}
+
+.ForecastBlockRounded {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 100% !important;
+  width: 200px;
+  height: 200px;
+}
+.ForecastBlockRoundedWrapper {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary);
+}
+
+.ForecastBlockRoundedItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ForecastBlockRoundedItem:nth-child(2) {
+  margin-top: 15px;
+}
+.ForecastBlockRoundedIcon {
+  font-size: 30px !important;
+  color: #ffef62 !important;
+}
+.ForecastBlockRoundedTime {
+  font-size: 18px;
+}
+
+.ForecastMoreInfo {
+  margin-top: 20px;
+  font-size: 16px;
+  color: var(--primary);
+}
+
+.ForecastPercentCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ForecastPercentCircle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  background-color: var(--background-color);
+  z-index: 1;
+}
+
+.ForecastPercentCircle .ForecastPercentNumber {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.ForecastPercentCircle span {
+  color: var(--primary);
+  font-size: 14px;
+  word-wrap: break-word;
+  width: 100px;
+  font-weight: bold;
+}
+.ForecastPercentCircle .ForecastPercentNumber h2 {
+  color: var(--primary);
+  font-size: 30px;
+  transition: 0.5s ease;
+}
+.ForecastPercentCircle .ForecastPercentNumber h2 span {
+  color: var(--primary);
+  padding-left: 3px;
+  font-size: 20px;
+  transition: 0.5s ease;
+}
+.ForecastPercentCircle svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(-85deg);
+}
+.ForecastPercentCircle svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #191919;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+.ForecastPercentCircle svg circle {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+.ForecastPercentCard svg circle {
+  stroke-dashoffset: calc(440px - (440px * 90) / 100);
+  stroke: #63e2ff;
+}
+
+@media (max-width: 800px) {
+  .WeatherForecastWrapper {
+    grid-template-columns: 220px;
+  }
+}

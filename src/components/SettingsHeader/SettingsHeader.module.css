@@ -1,0 +1,19 @@
+.SettingsHeaderWrapper {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+.SettingsHeaderText {
+  font-size: 25px !important;
+  color: var(--primary) !important;
+  font-weight: semibold !important;
+}
+.SettingsHeaderIcon {
+  color: var(--primary) !important;
+}
+.SettingsHeaderDivider {
+  margin-top: 7px !important;
+  border-color: var(--primary) !important;
+}

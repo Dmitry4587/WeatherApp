@@ -1,0 +1,30 @@
+.ActivePage button {
+  color: #03a9f4 !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.NavigationLink button {
+  color: var(--primary) !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.NavigationWrapper {
+  background-color: transparent;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+  .NavigationWrapper {
+    flex-direction: column;
+    margin-top: 25px;
+    height: auto;
+  }
+}

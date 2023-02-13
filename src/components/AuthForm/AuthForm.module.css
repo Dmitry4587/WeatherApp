@@ -1,0 +1,48 @@
+.AuthFormRegistr {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.AuthFormName {
+  display: flex;
+  justify-content: space-between;
+}
+.AuthFormName div {
+  width: 180px;
+  margin-bottom: 15px;
+}
+.AuthFormTitle {
+  color: var(--primary) !important;
+  font-size: 30px !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  margin-bottom: 15px !important;
+  text-align: center !important;
+}
+.AuthFormInput fieldset {
+  border-color: var(--primary) !important;
+}
+.AuthFormInput label {
+  color: var(--primary) !important;
+}
+input[value] {
+  color: var(--primary) !important;
+}
+.AuthFormBtn {
+  height: 50px !important;
+  width: 100% !important;
+  font-size: 18px !important;
+}
+@media (max-width: 800px) {
+  .AuthFormRegistr {
+    width: 300px;
+  }
+  .AuthFormName {
+    display: flex;
+    flex-direction: column;
+  }
+  .AuthFormName div {
+    width: auto;
+  }
+}

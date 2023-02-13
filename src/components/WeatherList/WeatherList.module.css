@@ -1,0 +1,68 @@
+.WeatherListWrapper {
+  margin-top: 20px;
+  display: grid !important;
+  column-gap: 20px;
+  row-gap: 25px;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  justify-content: center;
+}
+.WeatherListTitle {
+  color: var(--primary) !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 70px;
+  text-align: center;
+  font-size: 25px;
+}
+.WeatherListHead {
+  background-color: #42a5f5;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: auto 70px;
+  column-gap: 10px;
+}
+.WeatherListBody {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(3, 80px);
+  column-gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+.WeatherListCard {
+  padding: 0px !important;
+  background-color: var(--background-card);
+}
+.WeatherListCardActions {
+  background-color: var(--background-card);
+}
+.WeatherListLocation {
+  color: #e4e6eb !important;
+  font-size: 24px !important;
+}
+.WeatherListText {
+  color: var(--primary) !important;
+  font-size: 16px !important;
+}
+.WeatherListActions {
+  color: var(--primary) !important;
+  font-size: 12px !important;
+}
+.WeatherListWind {
+  color: #e4e6eb !important;
+  font-size: 18px !important;
+}
+.WeatherListTemp {
+  color: #e4e6eb !important;
+  font-size: 22px !important;
+}
+.WeatherListCondition {
+  color: #e4e6eb !important;
+}
+
+@media (max-width: 800px) {
+  .WeatherListWrapper {
+    grid-template-columns: repeat(1, 290px);
+  }
+}

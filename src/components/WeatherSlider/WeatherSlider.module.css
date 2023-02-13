@@ -1,0 +1,22 @@
+.WeatherSliderTemp {
+  display: grid;
+  grid-template-columns: 70px repeat(2, 90px);
+  align-items: center;
+  column-gap: 5px;
+  margin-bottom: 7px;
+}
+.WeatherSliderCard {
+  color: var(--primary) !important;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  background-color: transparent !important;
+  min-width: 200px;
+  margin-bottom: 25px;
+}
+.WeatherSliderCardActive {
+  color: #03a9f4;
+}
+
+.WeatherSliderMinTemp {
+  font-size: 22px !important;
+  color: var(--secondary) !important;
+}
